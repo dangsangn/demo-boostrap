@@ -1,0 +1,157 @@
+.nav-header .navbar-toggler {
+  display: none;
+}
+.navbar {
+  display: none;
+}
+
+.navbar-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header {
+  position: relative;
+}
+.navbar-mobile__img {
+  width: 50%;
+}
+.navbar-mobile__img > a > img {
+  width: 100%;
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.navbar-mobile__menu > input {
+  display: none;
+}
+.navbar-mobile__menu > label {
+  color: #fff;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.navbar-mobile__menu > input:checked + .mobile-menu {
+  display: block;
+  animation: appearance-navbar-mobile 0.3s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appearance-navbar-mobile {
+  from {
+    height: 0;
+    opacity: 0.5;
+  }
+  to {
+    height: 230px;
+    opacity: 1;
+  }
+}
+
+.mobile-menu__list {
+  margin: 0;
+  padding: 16px 32px;
+}
+.mobile-menu__list__item > a {
+  margin: 0;
+  display: inline-block;
+  padding: 4px 0;
+  color: #000;
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  .col-sm-1-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-1-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .about-image {
+    margin-top: 0;
+    padding: 0 24px;
+  }
+  .navigation-footer {
+    padding: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 599px) {
+  .nav-header {
+    padding: 0 7.5px !important;
+  }
+  .navbar-brand {
+    padding-left: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-1-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .section-padding {
+    padding: 100px 0 !important;
+  }
+
+  .navbar {
+    display: block;
+  }
+  .navbar-mobile {
+    display: none;
+  }
+
+  .navigation-footer,
+  .subcribe-footer,
+  .contact-footer {
+    margin-top: 0px !important;
+  }
+
+  .navigation-footer {
+    padding-left: 42px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .col-xl-1-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .about-caption2 {
+    margin-top: 0;
+    padding-left: 24px;
+  }
+  .do-fo-you .card {
+    margin-top: 0;
+  }
+  .do-fo-you__title {
+    margin-bottom: 24px;
+  }
+  .testimonial .carousel-caption .testimonial__content {
+    padding: 0 20%;
+  }
+  .simple-card {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .col-xxl-1-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
